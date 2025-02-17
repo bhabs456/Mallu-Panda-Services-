@@ -1,0 +1,191 @@
+*{
+    padding:  0;
+    margin: 0;
+}
+
+#header{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.navbar{
+    position: absolute;
+    height: 60px;
+    width: 100%;
+    padding: 5px 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 700px;
+}
+
+.logo{
+    height: 55px;
+    width: 100%;
+    padding: 0 10px;
+    /* border: 1px brown solid; */
+    border-radius: 100px;
+}
+
+.logo:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.logo img{
+    height: 100%;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    height: 55px;
+    gap: 10px;
+}
+
+.info-box1{
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+
+.country-flag button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    height: 32px;
+    border-radius: 100px 0 0 100px;
+    border-width: 1px 0 1px 1px;
+    background-color: rgba(29, 29, 29, 0.48);
+    border: none;
+    cursor: pointer;
+    padding: 0 16px;
+}
+
+.country-flag button:hover{
+    background-color: rgba(29, 29, 29, 0.68);
+}
+
+
+.language button{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #fff;
+    height: 32px;
+    border-radius: 0 100px 100px 0;
+    border-width: 1px 0 1px 1px;
+    background-color: rgba(29, 29, 29, 0.48);
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+.language button:hover{
+    background-color: rgba(29, 29, 29, 0.68);
+}
+
+.flag{ height: 13px; width: 20px;}
+
+.flag img{
+    height: 100%;
+    width: 100%;
+}
+
+i{
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid;
+    color: #fff;
+}
+
+.info-box2-login button{
+    padding: 0 18px;
+    height: 32px;
+    background-color: rgba(29, 29, 29, 0.48);
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.info-box2-login button:hover{
+    background-color: rgba(29, 29, 29, 0.68);
+}
+
+.info-box3-about button{
+    padding: 0 18px;
+    height: 32px;
+    background-color: red;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.info-box3-about button:hover{
+    background-color:   rgb(214, 8, 8);
+}
+
+#main-content{
+    height: 620px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#main-content:before{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    content: "";
+    overflow: hidden;
+    background: url("images/background\ img1.jpg") center/cover;
+    animation: background 25s infinite ease-in-out normal;
+}
+
+@keyframes background {
+    0%,100% {background: url(images/background\ img1.jpg) center/cover;}
+    20% {background: url(images/background\ img2.jpg) center/cover;}
+    40% {background: url(images/background\ img3.jpg) center/cover;}
+    60% {background: url(images/background\ img4.jpg) center/cover;}
+    80% {background: url(images/background\ img5.jpg) center/cover;}
+}
+
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 1321px;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    padding: 0 10px;
+}
+
+.airway-container{
+    height: 70%;
+    border-radius: 20px;
+
+    display: flex;
+    width: 100%;
+    background-color: antiquewhite;
+}
+

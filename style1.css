@@ -7,37 +7,41 @@
     position: relative;
     z-index: 10;
     display: flex;
-    /* justify-content: center; */
 }
 
 .navbar{
     position: absolute;
-    height: 60px;
+    height: 55px;
     width: 100%;
     padding: 5px 0;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 .nav-container{
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 700px;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 
 .logo{
     height: 55px;
-    width: 100%;
-    padding: 0 10px;
+    /* width: 100%; */
+    /* padding: 0 32px 0 0; */
     /* border: 1px brown solid; */
     border-radius: 100px;
+    position: relative;
+    right: 10px;
+    display: flex;
+    align-items: center;
 }
 
-.logo:hover{
+/* .logo:hover{
     background-color: rgba(0, 0, 0, 0.1);
-}
+} */
 
 .logo img{
     height: 100%;
@@ -58,6 +62,7 @@
     display: flex;
     align-items: center;
     gap: 1px;
+    height: 32px;
 }
 
 .country-flag button{
@@ -65,7 +70,7 @@
     align-items: center;
     gap: 10px;
     color: #fff;
-    height: 32px;
+    height: 32px;    
     border-radius: 100px 0 0 100px;
     border-width: 1px 0 1px 1px;
     background-color: rgba(29, 29, 29, 0.48);
@@ -140,7 +145,7 @@ i{
 }
 
 #main-content{
-    height: 620px;
+    height: 470px;
     width: 100%;
     position: relative;
     display: flex;
@@ -156,7 +161,7 @@ i{
     content: "";
     overflow: hidden;
     background: url("images/background\ img1.jpg") center/cover;
-    animation: background 25s infinite ease-in-out normal;
+    animation: background 25s infinite ease-in normal;
 }
 
 @keyframes background {
@@ -170,22 +175,186 @@ i{
 
 .content{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    height: 50%;
-    width: 1321px;
+    height: 100%;
+    height: 320px;
+    width: 100%;
+    max-width: 1280px;
+    /* gap: 10%; */
     position: relative;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 50px;
-    padding: 0 10px;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    margin-top: 40px;
+    border-radius: 10px;
+    /* padding: 0 10px; */
+    overflow: hidden;
 }
 
-.airway-container{
-    height: 70%;
-    border-radius: 20px;
-
-    display: flex;
+.content1{
+    height: 23%;
     width: 100%;
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+}
+
+.random{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    gap: 5px;
+}
+
+.flight-box{
+    height: 100%;
+    width: 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 0px; */
+    /* background-color: white; */
+    overflow: hidden;
+    border-radius: 10px 0 0 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.flight-box:hover{
+    background-color: white;
+    color: black;
+}
+.flight-box:hover svg{ fill: black;}
+
+.flight-box h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.train-box{
+    height: 100%;
+    width: 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.train-box:hover{
+    background-color: white;
+    color: black;
+}
+.train-box:hover svg{ fill: black;}
+
+.train-box h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.hotel-box{
+    height: 100%;
+    width: 12%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 0px 10px 0 0;
+}
+
+.hotel-box:hover{
+    background-color: white;
+    color: black;
+}
+.hotel-box:hover svg{ fill: black;}
+
+.hotel-box h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.content2{
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(163, 99, 16); */
+    background-color: white;
+    border-radius: 0 10px;
+}
+
+.content2-container{
+    /* background-color: red; */
+    padding: 24px;
+    height: 82%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+.content2-part1{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    /* background-color: aqua; */
+
+}
+
+.trip{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.trip button{
+    display: flex;
+    align-items: center;
+    height: 38px;
+    padding: 0 16px;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 100px;
+    border: #f4f4f4;
+    cursor: pointer;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.trip button:active{
+    background-color: #e7fddc;
+    color: #2d9533;
+}
+
+.content2-part2{
+    height: 35%;
+    width: 100%;
+    display: flex;    
+    background-color: aliceblue;
+}
+
+.content2-part3{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    background-color: burlywood;
+}
+
+.content2-part2{
+    display: flex;
+    align-items: center;
+    height: 64px;
+    position: relative;
+}
+
+.searchbox1, .searchbox2{
+    padding: 30px 40px 14px 16px;
 }
 

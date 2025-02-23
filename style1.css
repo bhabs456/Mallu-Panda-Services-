@@ -340,6 +340,34 @@ i{
     background-color: aliceblue;
 }
 
+.inputbox{
+    position: relative;
+    width: 250px;
+}
+
+.inputbox input{
+    width: 100%;
+    padding: 10px;
+
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    color: rgb(215, 190, 190);
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputbox input:valid ~span,
+.inputbox input:focus ~span{
+    color: #00dfc4;
+    transform: translateX(10px) translateY(4px);
+    font-size: 0.65em;
+    padding: 0 10px;
+}
+
 .content2-part3{
     height: 35%;
     width: 100%;
@@ -352,9 +380,5 @@ i{
     align-items: center;
     height: 64px;
     position: relative;
-}
-
-.searchbox1, .searchbox2{
-    padding: 30px 40px 14px 16px;
 }
 

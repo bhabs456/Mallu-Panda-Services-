@@ -359,7 +359,7 @@ i{
 outline: none;
 }
 
-.inputbox span{
+.inputbox label{
     position: absolute;
     left: 0;
     padding: 10px;
@@ -368,10 +368,10 @@ outline: none;
     transition: 0.5s;
 }
 
-.inputbox input:valid ~span,
-.inputbox input:focus ~span{
+.inputbox input:valid ~label,
+.inputbox input:focus ~label{
     color: #00dfc4;
-    transform: translateX(10px) translateY(4px);
+    transform: translateX(5px) translateY(4px);
     font-size: 0.65em;
     padding: 0 10px;
 }
@@ -389,4 +389,3 @@ outline: none;
     height: 64px;
     position: relative;
 }
-

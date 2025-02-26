@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(214, 236, 240);
+}
+
+.container {
+    display: flex;
+    /* gap: 10px; */
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.left {
+    height: 100%;
+    width: 60%;
+}
+
+.left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.right {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.center {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    height: 50px;
+}
+
+a img{
+    height: 100%;
+}
+
+.content {
+    width: 80%;
+}
+
+button {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    height: 40px;
+}
+
+button span {
+    flex: 1;
+    text-align: center;
+}
+
+/* Email Button */
+.email {
+    background-color: #ff0000;
+    color: white;
+}
+
+.email:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+/* Apple Button */
+.apple {
+    background-color: black;
+    color: white;
+}
+
+.apple:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Facebook Button */
+.facebook {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.facebook:hover {
+    background-color: #f0f0f0;
+    border: 2px solid black;
+    transform: scale(1.05);  
+}
+
+/* Google Button */
+.google {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.google:hover {
+    background-color: #f8f8f8;
+    border: 2px solid black;
+    transform: scale(1.05);
+}
+
+/* OR Section */
+.or-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.or-line {
+    flex-grow: 1;
+    height: 2px;
+    background: linear-gradient(to right, #d3d3d3, #000, #d3d3d3);
+    border: none;
+}
+
+.or-text {
+    background: white;
+    padding: 5px 15px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: black;
+    border: 2px solid #000;
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.or-text:hover {
+    background: black;
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer */
+.footer {
+    margin-top: 5px;
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+.footer a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+

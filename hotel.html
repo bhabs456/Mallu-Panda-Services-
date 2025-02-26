@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Flight</title>
-  <link rel="stylesheet" href="style1.css" />
+  <!-- <link rel="stylesheet" href="./src/output.css" /> -->
+  <link rel="stylesheet" href="style2.css" />
 </head>
 
 <body>
-
   <header id="header">
     <nav class="navbar">
       <div class="nav-container">
@@ -55,11 +55,13 @@
               <path
                 d="M16.5 4.5C17.3284 3.67157 18.6716 3.67157 19.5 4.5V4.5C20.3284 5.32843 20.3284 6.67157 19.5 7.5L17 10L18.8633 17.4361C18.9482 17.7749 18.8501 18.1335 18.6046 18.382L18.3626 18.6269C17.9174 19.0776 17.1706 19.0059 16.8192 18.4788L13.5 13.5L9.5 17.5V19.5858C9.5 19.851 9.39464 20.1054 9.20711 20.2929L8.92578 20.5742C8.45953 21.0405 7.67757 20.9357 7.35043 20.3633L6 18L3.63675 16.6496C3.06425 16.3224 2.95953 15.5405 3.42578 15.0742L3.70711 14.7929C3.89464 14.6054 4.149 14.5 4.41421 14.5H6.5L10.5 10.5L5.52125 7.18083C4.99413 6.82942 4.92247 6.08263 5.37316 5.63739L5.61816 5.39535C5.86664 5.14987 6.2252 5.05183 6.56401 5.13673L14 7L16.5 4.5Z" />
             </svg>
-            <h5>FLIGHTS</h5>
+          
+              <h5>FLIGHTS</h5>
+    
           </div>
         </a>
 
-        <a class="train-box">
+        <div class="train-box">
           <div class="random">
             <?xml version="1.0" encoding="utf-8"?>
             <svg fill="white" width="40px" height="40px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,7 +70,7 @@
             </svg>
             <h5>TRAINS</h5>
           </div>
-        </a>
+        </div>
 
         <a class="hotel-box" href="./hotel.html">
           <div class="random">
@@ -77,79 +79,74 @@
               <path
                 d="M2,7V21a1,1,0,0,0,1,1H13V6H3A1,1,0,0,0,2,7ZM5,9h5v2H5Zm0,4h5v2H5Zm0,4h5v2H5ZM22,3V21a1,1,0,0,1-1,1H15V4H10V3a1,1,0,0,1,1-1H21A1,1,0,0,1,22,3Z" />
             </svg>
-            <h5>HOTELS</h5>
+              <h5>HOTELS</h5>
           </div>
         </a>
       </div>
 
       <div class="content2">
         <div class="content2-container">
-          <div class="content2-part1">
-            <div class="trip">
-              <button>One-way</button>
-              <button>Round-trip</button>
-              <button>Multi-city</button>
-            </div>
+          <div class="content2-part1" style="font-family: Arial, Helvetica, sans-serif;">
+            <h4 class="trip" style=" font-weight: 600;">Where do you want to stay?</h4>
           </div>
 
           <div class="content2-part2">
-            <div class="content2-part2-1">
-              <div class="inputbox">
-                <input name="from" type="search" class="input1" placeholder="From">
-                <!-- <label for="from">From</label> -->
-              </div>
-
-              <svg width="40" height="40" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 13V11.5H10V9.5H16V8L19 10.5L16 13Z" fill="#858585" />
-                <path d="M8 17V15.5H14V13.5H8V12L5 14.5L8 17Z" fill="#858585" />
-              </svg>
 
               <div class="inputbox">
-                <input name="to" type="search" class="input2" placeholder="To">
-                <!-- <label for="to">To</label for=""> -->
+                <input class="input1" placeholder="Destination"  />
+                <!-- <label for="from">Destination</label> -->
               </div>
+
+              <div class="inputbox2">
+                <input class="input2" name="to" placeholder="Check-In" />
+                <!-- <label for="to">Check-In</label for=""> -->
+                <hr>
+                <input class="input3" name="Out"  placeholder="Check-Out"  />
+                <!-- <label for="Out">Check-Out</label for=""> -->
+              </div>
+            
+              <div class="inputbox">
+                <input class="input4" name="room" placeholder="Guest & Rooms"  />
+                <!-- <label for="room">Guest & Rooms</label for=""> -->
+              </div>
+            
+          </div>
+
+
+          <div class="content2-part3 ">
+            <div class="check-box">
+              <div class="nothingdiv">
+                <!-- <label for="checkout-checkbox"> -->
+                <input type="checkbox" class="checkout-checkbox">
+              <div style="font-size: 18px; font-weight: 600; font-family: Arial, Helvetica, sans-serif;">
+                <h4>Free cancellation</h4>
+              </div>
+              </div>
+            </label>
+           
             </div>
 
-            <div class="content2-part2-2">
-
-              <div class="inputbox">
-                <input type="search" class="input3" placeholder="Date">
-              </div>
-
-              <div class="span-symbol">
-                <span>&#x276E;</span>
-                <span>&#x276F;</span>
-              </div>
-
+            <div class="hotel-search-box">
+              <button>Search</button>
             </div>
           </div>
 
-          <div class="content2-part3">
-
-            <div class="content2-part3-1">
-              <div class="option-container">
-                <label><input class="option-container-input" type="checkbox"> Direct Flights Only </label>
-              </div>
-
-
-
-
-              <div class="choice-container"></div>
-            </div>
-
-
-
-
-
-
-            <div class="content2-part3-2"></div>
-
-          </div>
         </div>
+
+
+        <div class="content2-part4 ">
+            <h4 style="font-weight: 500;">Compare Wego vs. these sites:</h4>  
+            <!-- <label style="" for="Booking"> -->
+              <input type="checkbox" id="Booking">
+              <h4 style="font-weight: 500;">Booking.com</h4>
+            </label>
+        </div>
+
+        
+
       </div>
     </div>
   </section>
-
 </body>
 
 </html>
